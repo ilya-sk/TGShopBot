@@ -1,6 +1,7 @@
-import TelegramBot from "node-telegram-bot-api";
-import express, { json } from 'express';
-import cors from 'cors';
+const TelegramBot = require('node-telegram-bot-api');
+const express = require('express');
+const cors = require('cors');
+
 
 
 const token = "6795720145:AAHVDpDZNU04xLgBis0g_LX-QXFLsvjoQmk";
