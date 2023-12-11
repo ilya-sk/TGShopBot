@@ -10,7 +10,7 @@ const webAppUrl = "https://resilient-alfajores-9cbe8b.netlify.app";
 const bot = new TelegramBot(token, { polling: true });
 const app = express();
 
-app.use(json());
+app.use(express.json());
 app.use(cors());
 
 
