@@ -1,6 +1,6 @@
-const TelegramBot = require("node-telegram-bot-api");
-const express = require('express');
-const cors = require('cors');
+import TelegramBot from "node-telegram-bot-api";
+import express, { json } from 'express';
+import cors from 'cors';
 
 
 const token = "6795720145:AAHVDpDZNU04xLgBis0g_LX-QXFLsvjoQmk";
@@ -9,7 +9,7 @@ const webAppUrl = "https://resilient-alfajores-9cbe8b.netlify.app";
 const bot = new TelegramBot(token, { polling: true });
 const app = express();
 
-app.use(express.json());
+app.use(json());
 app.use(cors());
 
 
