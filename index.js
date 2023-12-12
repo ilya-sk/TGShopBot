@@ -59,7 +59,7 @@ app.post('/web-data', async (req, res) => {
     const {queryId, products = [], totalPrice} = req.body;
     try {
         await bot.answerWebAppQuery(queryId, {
-            type: 'article',
+            type: 'string',
             id: queryId,
             title: 'Успешная покупка',
             input_message_content: {
